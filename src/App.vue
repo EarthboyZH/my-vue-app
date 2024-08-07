@@ -58,7 +58,7 @@ function del(index) {
       </div>
 
       <!-- Button to delete a todo item -->
-      <div @click="del(index)" class="del">del</div>
+      <button @click="del(index)" class="del">del</button>
     </div>
   </div>
 </template>
