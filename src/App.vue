@@ -8,7 +8,7 @@ const value = ref('')
 const list = ref([
   { value: 'JavaScript', isCompleted: true },
   { value: 'JQuery', isCompleted: false },
-  { value: 'Vue.js', isCompleted: false },
+  { value: 'Vue', isCompleted: false },
 ])
 
 // Function to add a new todo item to the list
@@ -58,7 +58,7 @@ function del(index) {
       </div>
 
       <!-- Button to delete a todo item -->
-      <button @click="del(index)" class="del">del</button>
+      <button @click="del(index)" class="del-button">del</button>
     </div>
   </div>
 </template>
@@ -102,6 +102,17 @@ function del(index) {
   cursor: pointer;
   font-size: 14px;
   user-select: none;
+}
+
+.del-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  background:blue;
+  border:none;
+  color:#FFF;
+  cursor: pointer;
 }
 
 .todo-input {
